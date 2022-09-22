@@ -11,9 +11,11 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func firstButton(_ sender: Any) {
+        present(HomeRouter.assembleModule(), animated: true, completion: nil)
+    }
+    
 }
 

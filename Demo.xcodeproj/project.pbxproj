@@ -13,6 +13,11 @@
 		C69F503228DCB2930027A059 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C69F503028DCB2930027A059 /* Main.storyboard */; };
 		C69F503428DCB2950027A059 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C69F503328DCB2950027A059 /* Assets.xcassets */; };
 		C69F503728DCB2950027A059 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C69F503528DCB2950027A059 /* LaunchScreen.storyboard */; };
+		C69F504428DCB9370027A059 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69F504228DCB9370027A059 /* HomeViewController.swift */; };
+		C69F504528DCB9370027A059 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C69F504328DCB9370027A059 /* HomeViewController.xib */; };
+		C69F504728DCB95A0027A059 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69F504628DCB95A0027A059 /* HomeInteractor.swift */; };
+		C69F504928DCB9AC0027A059 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69F504828DCB9AC0027A059 /* HomePresenter.swift */; };
+		C69F504B28DCBAFF0027A059 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69F504A28DCBAFF0027A059 /* HomeRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		C69F503328DCB2950027A059 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C69F503628DCB2950027A059 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C69F503828DCB2950027A059 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C69F504228DCB9370027A059 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		C69F504328DCB9370027A059 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		C69F504628DCB95A0027A059 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		C69F504828DCB9AC0027A059 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		C69F504A28DCBAFF0027A059 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +66,7 @@
 		C69F502928DCB2930027A059 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				C69F503E28DCB8C00027A059 /* Modules */,
 				C69F502A28DCB2930027A059 /* AppDelegate.swift */,
 				C69F502C28DCB2930027A059 /* SceneDelegate.swift */,
 				C69F502E28DCB2930027A059 /* ViewController.swift */,
@@ -65,6 +76,26 @@
 				C69F503828DCB2950027A059 /* Info.plist */,
 			);
 			path = Demo;
+			sourceTree = "<group>";
+		};
+		C69F503E28DCB8C00027A059 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				C69F503F28DCB8D10027A059 /* Home */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		C69F503F28DCB8D10027A059 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				C69F504228DCB9370027A059 /* HomeViewController.swift */,
+				C69F504328DCB9370027A059 /* HomeViewController.xib */,
+				C69F504628DCB95A0027A059 /* HomeInteractor.swift */,
+				C69F504828DCB9AC0027A059 /* HomePresenter.swift */,
+				C69F504A28DCBAFF0027A059 /* HomeRouter.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +159,7 @@
 				C69F503728DCB2950027A059 /* LaunchScreen.storyboard in Resources */,
 				C69F503428DCB2950027A059 /* Assets.xcassets in Resources */,
 				C69F503228DCB2930027A059 /* Main.storyboard in Resources */,
+				C69F504528DCB9370027A059 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +173,10 @@
 				C69F502F28DCB2930027A059 /* ViewController.swift in Sources */,
 				C69F502B28DCB2930027A059 /* AppDelegate.swift in Sources */,
 				C69F502D28DCB2930027A059 /* SceneDelegate.swift in Sources */,
+				C69F504B28DCBAFF0027A059 /* HomeRouter.swift in Sources */,
+				C69F504928DCB9AC0027A059 /* HomePresenter.swift in Sources */,
+				C69F504728DCB95A0027A059 /* HomeInteractor.swift in Sources */,
+				C69F504428DCB9370027A059 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
