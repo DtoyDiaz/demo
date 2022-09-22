@@ -18,6 +18,8 @@
 		C69F504728DCB95A0027A059 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69F504628DCB95A0027A059 /* HomeInteractor.swift */; };
 		C69F504928DCB9AC0027A059 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69F504828DCB9AC0027A059 /* HomePresenter.swift */; };
 		C69F504B28DCBAFF0027A059 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69F504A28DCBAFF0027A059 /* HomeRouter.swift */; };
+		C69F504E28DD02E00027A059 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69F504C28DD02DF0027A059 /* TableViewCell.swift */; };
+		C69F504F28DD02E00027A059 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C69F504D28DD02DF0027A059 /* TableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		C69F504628DCB95A0027A059 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
 		C69F504828DCB9AC0027A059 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		C69F504A28DCBAFF0027A059 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		C69F504C28DD02DF0027A059 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		C69F504D28DD02DF0027A059 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +98,8 @@
 				C69F504628DCB95A0027A059 /* HomeInteractor.swift */,
 				C69F504828DCB9AC0027A059 /* HomePresenter.swift */,
 				C69F504A28DCBAFF0027A059 /* HomeRouter.swift */,
+				C69F504C28DD02DF0027A059 /* TableViewCell.swift */,
+				C69F504D28DD02DF0027A059 /* TableViewCell.xib */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -157,6 +163,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C69F503728DCB2950027A059 /* LaunchScreen.storyboard in Resources */,
+				C69F504F28DD02E00027A059 /* TableViewCell.xib in Resources */,
 				C69F503428DCB2950027A059 /* Assets.xcassets in Resources */,
 				C69F503228DCB2930027A059 /* Main.storyboard in Resources */,
 				C69F504528DCB9370027A059 /* HomeViewController.xib in Resources */,
@@ -171,6 +178,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C69F502F28DCB2930027A059 /* ViewController.swift in Sources */,
+				C69F504E28DD02E00027A059 /* TableViewCell.swift in Sources */,
 				C69F502B28DCB2930027A059 /* AppDelegate.swift in Sources */,
 				C69F502D28DCB2930027A059 /* SceneDelegate.swift in Sources */,
 				C69F504B28DCBAFF0027A059 /* HomeRouter.swift in Sources */,
