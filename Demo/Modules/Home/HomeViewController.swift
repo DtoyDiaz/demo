@@ -10,30 +10,37 @@ import UIKit
 class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     var interactor: HomeInteractor?
+    var usersTemporal: [User] = []
     
+    // MARK: -  IBOutlet - 
     @IBOutlet weak var emailTable: UITableView!
     
-    let usersTemporal = ["fanny@gmail.com","lili@gmail.com",
-                         "yess@gmail.com","martina@gmail.com",
-                         "jazmin@gmail.com","xiomi@gmail.com",
-                         "cris@gmail.com","vero@gmail.com"]
-    
+    // MARK: - Lifecycle -
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        emailTable.register(UITableViewCell.self, forCellReuseIdentifier: "TableViewCell")
-
+        emailTable.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: "TableViewCell")
+        emailTable.dataSource = self
+        emailTable.delegate = self
+        interactor?.fetchData()
+    }
+    
+    func displayData(data: [User]) {
+        self.usersTemporal = data
+        emailTable.reloadData()
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        let numberOfrows = usersTemporal.count
-        return numberOfrows
+        return usersTemporal.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell", for: indexPath)
+        let cell = emailTable.dequeueReusableCell(withIdentifier: "TableViewCell", for: indexPath) as! TableViewCell
+        let userEmail = usersTemporal[indexPath.row]
+        cell.configure(userToShow: userEmail)
         return cell
-        
     }
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 80
+    }
 }

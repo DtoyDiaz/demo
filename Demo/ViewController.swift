@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func firstButton(_ sender: Any) {
-        present(HomeRouter.assembleModule(), animated: true, completion: nil)
+        present(PostRouter.assembleModule(), animated: true, completion: nil)
     }
     
 }

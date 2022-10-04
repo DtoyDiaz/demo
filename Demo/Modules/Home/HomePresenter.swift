@@ -9,5 +9,9 @@ import Foundation
 
 class HomePresenter {
     var view: HomeViewController?
+    
+    func presentData(data: [User]) {
+        view?.displayData(data: data)
+    }
 }
 
